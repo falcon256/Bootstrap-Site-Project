@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Daniel Lambert">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="#" />
+    <link rel="apple-touch-icon" sizes="180x180" href="http://18.206.89.199/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://18.206.89.199/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://18.206.89.199/favicon-16x16.png">
+    <link rel="manifest" href="http://18.206.89.199/site.webmanifest">
+    <link rel="mask-icon" href="http://18.206.89.199/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>256 Games</title>
@@ -18,7 +19,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <style>
       .bd-placeholder-img {
@@ -37,20 +38,26 @@
       }
     </style>
 
-    <link href="../css/256games.css" rel="stylesheet">
-    <div id="nav-placeholder">
-      <script>
-      $(function(){
-        $("#nav-placeholder").load("nav.html");
-      });
-      </script>
-    </div>
+    <link href="css/256games.css" rel="stylesheet">
+
+    <script type="text/javascript">
+      window.onload = function(){
+          $.get("nav.html", function(data){
+              $("#common-navbar").html(data);
+              $('.navbar-nav').find('li:nth-child(1)')
+                .addClass('active')
+                .find('a').append('<span class="sr-only">(current)</span>');
+          });
+      }
+    </script>
+
+
   </head>
   <body>
 
 
 <main role="main" class="container">
-
+  <div id="common-navbar"></div>
   <div class="starter-template">
     <h1>Bootstrap starter template</h1>
     <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
