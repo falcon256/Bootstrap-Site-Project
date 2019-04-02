@@ -7,11 +7,11 @@
     <meta name="description" content="">
     <meta name="author" content="Daniel Lambert">
     <link rel="shortcut icon" href="#" />
-    <link rel="apple-touch-icon" sizes="180x180" href="http://18.206.89.199/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="http://18.206.89.199/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="http://18.206.89.199/favicon-16x16.png">
-    <link rel="manifest" href="http://18.206.89.199/site.webmanifest">
-    <link rel="mask-icon" href="http://18.206.89.199/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>256 Games</title>
@@ -21,22 +21,6 @@
     <!-- Bootstrap core CSS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
 
     <link href="css/256games.css" rel="stylesheet">
 
@@ -48,22 +32,26 @@
                 .addClass('active')
                 .find('a').append('<span class="sr-only">(current)</span>');
           });
+          $.get("footer.html", function(data){
+              $("#common-footer").html(data);
+          });
       }
     </script>
-
-
+    <div id="common-navbar"></div>
   </head>
   <body>
 
 
 <main role="main" class="container">
-  <div id="common-navbar"></div>
-  <div class="starter-template">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-  </div>
 
-</main><!-- /.container -->
+<div>
+</div>
+
+</main>
+<div id="common-footer"></div>
+
+
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>

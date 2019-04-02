@@ -1,0 +1,26 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+head {
+  width: 100%;
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+body {
+    margin-bottom: 70px;
+    overflow:hidden;
+    background:url(/256logolight.svg) no-repeat center bottom;
+    background-position: center center;
+    background-size: 60% auto;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
