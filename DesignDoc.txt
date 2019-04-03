@@ -6,3 +6,6 @@ I want to have a more elegant and sleek look than my wordpress site, so no retro
 
 New Text:
 I found out BSU doesn't have the old news anymore, so a lot of my links don't work.
+
+Github at https://github.com/falcon256/Bootstrap-Site-Project/commits/master
+Page at 256games.com
