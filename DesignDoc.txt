@@ -3,3 +3,6 @@ Original Text.
 For my site I would like to prototype a website for a company that I may or may not officially found. I've got a couple game projects in process and I'd like to set up a page for each of them on one site. This site would use my 256games.com and 256games.net domains. For the about section, I want to talk about my past experience, including my old game development company, and what drives me to continue to make games. I will probably link to my own website and maybe some news articles and conventions where my work is featured. Each of the three game pages will have a description and a development road map. Some parts will contain screen shots from prototypes. 
 
 I want to have a more elegant and sleek look than my wordpress site, so no retro theme this time.
+
+New Text:
+I found out BSU doesn't have the old news anymore, so a lot of my links don't work.
