@@ -11,7 +11,6 @@ head {
 body {
       margin-bottom: 100px;
       margin-top: 100px;
-      overflow:hidden;
       background:url(/256logolight.svg) no-repeat center bottom;
       background-position: center center;
       background-size: 100% 80%;
@@ -19,7 +18,6 @@ body {
 main {
       margin-bottom: 70px;
       margin-top: 70px;
-      overflow:hidden;
 }
 footer {
       position: absolute;
